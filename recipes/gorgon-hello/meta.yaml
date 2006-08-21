@@ -1,0 +1,21 @@
+package:
+    name: gorgon-hello
+    version: 0.1
+
+build:
+    number: 1
+  
+source:
+    path: {{RECIPE_DIR}}/../../
+
+requirements:
+    build:
+        - cmake >=3.4
+        - python 2.7.*
+        - boost
+    run:
+        - python 2.7.*
+        - boost
+
+about:
+  summary: Gorgon 'Hello World!'

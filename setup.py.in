@@ -1,0 +1,16 @@
+from setuptools import setup
+
+setup(
+        name="gorgon",
+        version="@Gorgon_VERSION@",
+        package_dir={'gorgon':'bin'},
+        packages=['gorgon', 'gorgon.hello'],
+        package_data={'gorgon.hello':['*.so','*.pyd', '*.dll']},
+        entry_points={
+            'console_scripts': [
+                'gorgon-hello=gorgon.hello.main:main',
+            ],
+        },
+        zip_safe = False,
+
+)
