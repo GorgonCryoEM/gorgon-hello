@@ -67,7 +67,6 @@ include_directories(${GORGON_INCLUDE_DIRS})
 # --------------------------------------------------------------------
 enable_testing()
 
-add_subdirectory(legacy)
 add_subdirectory(src)
 # --------------------------------------------------------------------
 # C++11 flags
