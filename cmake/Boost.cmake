@@ -4,6 +4,7 @@ if(UNIX)
 endif()
 
 set(Boost_USE_MULTITHREADED ON)
+set(Boost_DEBUG ON)
 
 if(NOT WIN32)
 	find_package(Boost COMPONENTS python REQUIRED)
@@ -14,6 +15,7 @@ endif()
 
 message("_________${CMAKE_CURRENT_SOURCE_DIR}")
 message("_________${CMAKE_CURRENT_LIST_FILE}")
+message("_________${CMAKE_CURRENT_BINARY_DIR}")
 message("BOOST_LIBRARYDIR: ${BOOST_LIBRARYDIR}")
 
 update_libs_includes(Boost_LIBRARIES Boost_INCLUDE_DIR)
