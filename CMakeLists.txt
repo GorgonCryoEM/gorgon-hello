@@ -34,11 +34,8 @@ endif()
 # Find dependencies
 # --------------------------------------------------------------------
 set( EXTERNAL_PROJECTS
-        OpenGL
-        GLUT
         Python
         Boost
-        FFTW3F
         )
 
 #Conda prefix
