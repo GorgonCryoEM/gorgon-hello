@@ -12,6 +12,10 @@ else()
 	find_package(Boost COMPONENTS python serialization REQUIRED)
 endif()
 
+message("_________${CMAKE_CURRENT_SOURCE_DIR}")
+message("_________${CMAKE_CURRENT_LIST_FILE}")
+message("BOOST_LIBRARYDIR: ${BOOST_LIBRARYDIR}")
+
 update_libs_includes(Boost_LIBRARIES Boost_INCLUDE_DIR)
 if(Boost_FOUND)
 	message(STATUS "  ${Boost_LIBRARIES}")
